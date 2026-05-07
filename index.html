@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title> nadia & aya SE Asia Trip </title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- ─── NAV ──────────────────────────────────────────────── -->
+<nav>
+  <div class="nav-logo">summer <span>'26</span></div>
+  <ul class="nav-links">
+    <li><a href="#" data-page="home" onclick="navigate('home');return false;" class="active">Overview</a></li>
+    <li><a href="#" data-page="hcmc" onclick="navigate('hcmc');return false;" class="vn">HCMC</a></li>
+    <li><a href="#" data-page="danang" onclick="navigate('danang');return false;" class="vn">Da Nang</a></li>
+    <li><a href="#" data-page="hanoi" onclick="navigate('hanoi');return false;" class="vn">Hanoi</a></li>
+    <li><a href="#" data-page="chiangmai" onclick="navigate('chiangmai');return false;" class="th">Chiang Mai</a></li>
+    <li><a href="#" data-page="bangkok" onclick="navigate('bangkok');return false;" class="th">Bangkok</a></li>
+    <li><a href="#" data-page="phuket" onclick="navigate('phuket');return false;" class="th">Phuket</a></li>
+  </ul>
+</nav>
+
+<!-- ═══════════════════════════════════════════════════════ -->
+<!-- HOME PAGE                                               -->
+<!-- ═══════════════════════════════════════════════════════ -->
+<div id="page-home" class="page page-hidden">
+
+  <section class="hero">
+    <div class="hero-left">
+      <p class="hero-eyebrow">Jul 15 – Aug 3, 2026 &nbsp;·&nbsp; 20 Days</p>
+      <h1 class="hero-title">Vietnam<br>&amp; <em>Thailand</em></h1>
+      <h2 class="hero-subtitle">nadia & aya's journey through Southeast Asia</h2>
+      <div class="hero-meta">
+        <div class="hero-meta-item">
+          <span class="hero-meta-label">Cities</span>
+          <span class="hero-meta-val">6</span>
+        </div>
+        <div class="hero-meta-item">
+          <span class="hero-meta-label">Total</span>
+          <span class="hero-meta-val">$2,495</span>
+        </div>
+        <div class="hero-meta-item">
+          <span class="hero-meta-label">Per Person</span>
+          <span class="hero-meta-val">$1,248</span>
+        </div>
+        <div class="hero-meta-item">
+          <span class="hero-meta-label">Daily Avg</span>
+          <span class="hero-meta-val">$62/pp</span>
+        </div>
+      </div>
+      <button class="hero-cta" onclick="navigate('hcmc')">
+        Start in Ho Chi Minh City <span class="arrow">→</span>
+      </button>
+    </div>
+
+    <a href="https://wanderlog.com/plan/lwdobzmjrxmllmjx/trip-to-vietnam-thailand-south-korea--japan" target="_blank" class="hero-link-btn">
+  View full trip on Wanderlog ↗
+</a>
+
+    <div class="hero-right">
+      <div class="hero-photo" style="background:#8B6B55;">
+        <div class="photo-placeholder">
+          <div class="icon">✦</div>
+          <img src="images/IMG_3710.JPG" alt="" style="width:100%;height:100%;object-fit:cover;" />
+        </div>
+        <span class="photo-label">Vietnam</span>
+      </div>
+      <div class="hero-photo" style="background:#4A7B8A;">
+        <div class="photo-placeholder">
+          <div class="icon">✦</div>
+          <img src="images/IMG_3724.JPG" alt="" style="width:100%;height:100%;object-fit:cover;" />
+        </div>
+        <span class="photo-label">Thailand</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Destinations strip -->
+  <div class="destinations-strip">
+    <div class="dest-item" onclick="navigate('hcmc')">
+      <span class="dest-flag">🇻🇳</span>
+      <div class="dest-info">
+        <span class="dest-name">Ho Chi Minh City</span>
+        <span class="dest-dates">Jul 15–18 · 3 nights · ~$445</span>
+      </div>
+    </div>
+    <div class="dest-item" onclick="navigate('danang')">
+      <span class="dest-flag">🇻🇳</span>
+      <div class="dest-info">
+        <span class="dest-name">Da Nang</span>
+        <span class="dest-dates">Jul 18–21 · 3 nights · ~$330</span>
+      </div>
+    </div>
+    <div class="dest-item" onclick="navigate('hanoi')">
+      <span class="dest-flag">🇻🇳</span>
+      <div class="dest-info">
+        <span class="dest-name">Hanoi</span>
+        <span class="dest-dates">Jul 21–24 · 3 nights · ~$345</span>
+      </div>
+    </div>
+    <div class="dest-item" onclick="navigate('chiangmai')">
+      <span class="dest-flag">🇹🇭</span>
+      <div class="dest-info">
+        <span class="dest-name">Chiang Mai</span>
+        <span class="dest-dates">Jul 24–26 · 2 nights · ~$305</span>
+      </div>
+    </div>
+    <div class="dest-item" onclick="navigate('bangkok')">
+      <span class="dest-flag">🇹🇭</span>
+      <div class="dest-info">
+        <span class="dest-name">Bangkok</span>
+        <span class="dest-dates">Jul 26–30 · 4 nights · ~$520</span>
+      </div>
+    </div>
+    <div class="dest-item" onclick="navigate('phuket')">
+      <span class="dest-flag">🇹🇭</span>
+      <div class="dest-info">
+        <span class="dest-name">Phuket</span>
+        <span class="dest-dates">Jul 30–Aug 3 · 4 nights · ~$550</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Budget overview -->
+  <section class="budget-overview">
+    <h2 class="section-eyebrow">Budget Breakdown</h2>
+    <h2 class="section-title">Two people, twenty days,<br>one unforgettable trip.</h2>
+
+    <div class="budget-cards">
+      <div class="budget-card">
+        <span class="budget-card-label">Vietnam Total</span>
+        <span class="budget-card-amount">$1,120</span>
+        <span class="budget-card-sub">HCMC · Da Nang · Hanoi · 9 nights</span>
+      </div>
+      <div class="budget-card highlight">
+        <span class="budget-card-label">Thailand Total</span>
+        <span class="budget-card-amount">$1,375</span>
+        <span class="budget-card-sub">Chiang Mai · Bangkok · Phuket · 10 nights</span>
+      </div>
+      <div class="budget-card total">
+        <span class="budget-card-label">Grand Total · Both People</span>
+        <span class="budget-card-amount">$2,495</span>
+        <span class="budget-card-sub">Range: $2,100 – $2,900 · excl. intl flights</span>
+      </div>
+    </div>
+
+    <div id="cat-grid" class="cat-grid"></div>
+
+    <div style="margin-top:3rem; padding-top:2rem; border-top:1px solid var(--border); display:flex; gap:3rem; flex-wrap:wrap;">
+      <div>
+        <p style="font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink-muted);margin-bottom:4px;">Per person</p>
+        <p style="font-family:var(--font-display);font-size:2rem;font-weight:300;">~$1,248</p>
+      </div>
+      <div>
+        <p style="font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink-muted);margin-bottom:4px;">Daily avg / person</p>
+        <p style="font-family:var(--font-display);font-size:2rem;font-weight:300;">~$62</p>
+      </div>
+      <div>
+        <p style="font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink-muted);margin-bottom:4px;">In-trip flights</p>
+        <p style="font-family:var(--font-display);font-size:2rem;font-weight:300;">$235</p>
+        <p style="font-size:12px;color:var(--ink-muted);">4 domestic flights</p>
+      </div>
+      <div>
+        <p style="font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink-muted);margin-bottom:4px;">Vietnam tips</p>
+        <p style="font-size:13px;color:var(--ink-light);max-width:300px;line-height:1.7;">Use Grab + Xanh SM · eat viet yogurt on arrival · bring lots of hand sanitizer</p>
+      </div>
+    </div>
+  </section>
+
+</div><!-- /page-home -->
+
+
+<!-- ═══════════════════════════════════════════════════════ -->
+<!-- CITY PAGE TEMPLATE MACRO                               -->
+<!-- ═══════════════════════════════════════════════════════ -->
+
+<!-- HCMC -->
+<div id="page-hcmc" class="page page-hidden">
+  <div class="city-hero">
+    <div class="city-hero-bg" style="background:#8B6B55;">
+      div class="photo-grid-item">
+  <img src="images/IMG_3710.JPG" alt="" style="width:100%;height:100%;object-fit:cover;" />
+    </div>
+    <div class="city-hero-overlay"></div>
+    <div class="city-hero-content">
+      <div class="city-hero-flag"></div>
+      <h1 class="city-hero-name"></h1>
+      <p class="city-hero-dates"></p>
+    </div>
+    <div class="city-hero-total">
+      <p class="city-hero-total-label">Est. budget · 2 people</p>
+      <p class="city-hero-total-amount"></p>
+    </div>
+  </div>
+  <div class="photo-grid">
+    <div class="photo-grid-item">
+  <img src="images/IMG_3722.JPG" alt="" style="width:100%;height:100%;object-fit:cover;" />
+</div>
+<div class="photo-grid-item">
+  <img src="images/IMG_3704.JPG" alt="" style="width:100%;height:100%;object-fit:cover;" />
+</div>
+<div class="photo-grid-item">
+  <img src="images/IMG_3705.JPG" alt="" style="width:100%;height:100%;object-fit:cover;" />
+</div>
+<div class="photo-grid-item">
+  <img src="images/IMG_3706.JPG" alt="" style="width:100%;height:100%;object-fit:cover;" />
+</div>
+<div class="photo-grid-item">
+  <img src="images/IMG_3707.JPG" alt="" style="width:100%;height:100%;object-fit:cover;" />
+</div>
+  </div>
+  <div class="city-content">
+    <div class="expenses-section">
+      <div class="expenses-header">
+        <h2 class="expenses-title">Expenses</h2>
+        <span class="expenses-total-city"></span>
+      </div>
+      <div class="expenses-list"></div>
+    </div>
+    <div class="tips-card">
+      <h2>Tips & Notes</h2>
+      <ul class="tips-list"></ul>
+    </div>
+  </div>
+  <div class="city-nav-footer">
+    <button class="city-nav-btn city-nav-prev"><span class="city-nav-direction">Previous</span><span class="city-nav-name"></span></button>
+    <button class="city-nav-btn right city-nav-next"><span class="city-nav-direction">Next stop</span><span class="city-nav-name"></span></button>
+  </div>
+</div>
+
+<!-- DA NANG -->
+<div id="page-danang" class="page page-hidden">
+  <div class="city-hero">
+    <div class="city-hero-bg" style="background:#5E7A8A;">
+     div class="photo-grid-item">
+  <img src="images/IMG_3722.JPG" alt="" style="width:100%;height:100%;object-fit:cover;" /> 
+    </div>
+    <div class="city-hero-overlay"></div>
+    <div class="city-hero-content">
+      <div class="city-hero-flag"></div>
+      <h1 class="city-hero-name"></h1>
+      <p class="city-hero-dates"></p>
+    </div>
+    <div class="city-hero-total">
+      <p class="city-hero-total-label">Est. budget · 2 people</p>
+      <p class="city-hero-total-amount"></p>
+    </div>
+  </div>
+  <div class="photo-grid">
+    <div class="photo-grid-item">
+  <img src="images/IMG_3708.JPG" alt="" style="width:100%;height:100%;object-fit:cover;" />
+</div>
+<div class="photo-grid-item">
+  <img src="images/IMG_3709.JPG" alt="" style="width:100%;height:100%;object-fit:cover;" />
+</div>
+<div class="photo-grid-item">
+  <img src="images/IMG_3710.JPG" alt="" style="width:100%;height:100%;object-fit:cover;" />
+</div>
+<div class="photo-grid-item">
+  <img src="images/IMG_3711.JPG" alt="" style="width:100%;height:100%;object-fit:cover;" />
+</div>
+<div class="photo-grid-item">
+  <img src="images/IMG_3712.JPG" alt="" style="width:100%;height:100%;object-fit:cover;" />
+</div>
+  </div>
+  <div class="city-content">
+    <div class="expenses-section">
+      <div class="expenses-header">
+        <h2 class="expenses-title">Expenses</h2>
+        <span class="expenses-total-city"></span>
+      </div>
+      <div class="expenses-list"></div>
+    </div>
+    <div class="tips-card">
+      <h2>Tips & Notes</h2>
+      <ul class="tips-list"></ul>
+    </div>
+  </div>
+  <div class="city-nav-footer">
+    <button class="city-nav-btn city-nav-prev"><span class="city-nav-direction">Previous</span><span class="city-nav-name"></span></button>
+    <button class="city-nav-btn right city-nav-next"><span class="city-nav-direction">Next stop</span><span class="city-nav-name"></span></button>
+  </div>
+</div>
+
+<!-- HANOI -->
+<div id="page-hanoi" class="page page-hidden">
+
+  <div class="city-hero">
+    <div class="city-hero-bg" style="background:#6B7A55;">
+      <img src="images/IMG_3704.JPG" class="hanoi-photo" />
+    </div>
+
+    <div class="city-hero-overlay"></div>
+
+    <div class="city-hero-content">
+      <div class="city-hero-flag"></div>
+      <h1 class="city-hero-name"></h1>
+      <p class="city-hero-dates"></p>
+    </div>
+
+    <div class="city-hero-total">
+      <p class="city-hero-total-label">Est. budget · 2 people</p>
+      <p class="city-hero-total-amount"></p>
+    </div>
+  </div>
+
+  <div class="photo-grid">
+    <div class="photo-grid-item">
+      <img src="images/IMG_3709.JPG" class="hanoi-photo" />
+    </div>
+    <div class="photo-grid-item">
+      <img src="images/IMG_3713.JPG" class="hanoi-photo" />
+    </div>
+    <div class="photo-grid-item">
+      <img src="images/IMG_3714.JPG" class="hanoi-photo" />
+    </div>
+    <div class="photo-grid-item">
+      <img src="images/IMG_3715.JPG" class="hanoi-photo" />
+    </div>
+    <div class="photo-grid-item">
+      <img src="images/IMG_3716.JPG" class="hanoi-photo" />
+    </div>
+  </div>
+
+  <div class="city-content">
+    <div class="expenses-section">
+      <div class="expenses-header">
+        <h2 class="expenses-title">Expenses</h2>
+        <span class="expenses-total-city"></span>
+      </div>
+      <div class="expenses-list"></div>
+    </div>
+
+    <div class="tips-card">
+      <h2>Tips & Notes</h2>
+      <ul class="tips-list"></ul>
+    </div>
+  </div>
+
+  <div class="city-nav-footer">
+    <button class="city-nav-btn city-nav-prev">
+      <span class="city-nav-direction">Previous</span>
+      <span class="city-nav-name"></span>
+    </button>
+
+    <button class="city-nav-btn right city-nav-next">
+      <span class="city-nav-direction">Next stop</span>
+      <span class="city-nav-name"></span>
+    </button>
+  </div>
+
+</div>
+
+<!-- CHIANG MAI -->
+<div id="page-chiangmai" class="page page-hidden">
+  <div class="city-hero">
+    <div class="city-hero-bg" style="background:#7A6855;">
+      <img src="images/IMG_3741.JPG" class="city-photo" />
+     
+    </div>
+    <div class="city-hero-overlay"></div>
+    <div class="city-hero-content">
+      <div class="city-hero-flag"></div>
+      <h1 class="city-hero-name"></h1>
+      <p class="city-hero-dates"></p>
+    </div>
+    <div class="city-hero-total">
+      <p class="city-hero-total-label">Est. budget · 2 people</p>
+      <p class="city-hero-total-amount"></p>
+    </div>
+  </div>
+  <div class="photo-grid">
+  <div class="photo-grid-item">
+    <img src="images/IMG_3724.JPG" class="city-photo" />
+  </div>
+  <div class="photo-grid-item">
+    <img src="images/IMG_3725.JPG" class="city-photo" />
+  </div>
+  <div class="photo-grid-item">
+    <img src="images/IMG_3726.JPG" class="city-photo" />
+  </div>
+  <div class="photo-grid-item">
+    <img src="images/IMG_3727.JPG" class="city-photo" />
+  </div>
+  <div class="photo-grid-item">
+    <img src="images/IMG_3728.JPG" class="city-photo" />
+  </div>
+</div>
+  <div class="city-content">
+    <div class="expenses-section">
+      <div class="expenses-header">
+        <h2 class="expenses-title">Expenses</h2>
+        <span class="expenses-total-city"></span>
+      </div>
+      <div class="expenses-list"></div>
+    </div>
+    <div class="tips-card">
+      <h2>Tips & Notes</h2>
+      <ul class="tips-list"></ul>
+    </div>
+  </div>
+  <div class="city-nav-footer">
+    <button class="city-nav-btn city-nav-prev"><span class="city-nav-direction">Previous</span><span class="city-nav-name"></span></button>
+    <button class="city-nav-btn right city-nav-next"><span class="city-nav-direction">Next stop</span><span class="city-nav-name"></span></button>
+  </div>
+</div>
+
+<!-- BANGKOK -->
+<div id="page-bangkok" class="page page-hidden">
+  <div class="city-hero">
+    <div class="city-hero-bg" style="background:#8A6B3A;">
+     <img src="images/IMG_3727.JPG" class="city-photo" />
+    </div>
+    <div class="city-hero-overlay"></div>
+    <div class="city-hero-content">
+      <div class="city-hero-flag"></div>
+      <h1 class="city-hero-name"></h1>
+      <p class="city-hero-dates"></p>
+    </div>
+    <div class="city-hero-total">
+      <p class="city-hero-total-label">Est. budget · 2 people</p>
+      <p class="city-hero-total-amount"></p>
+    </div>
+  </div>
+  <div class="photo-grid">
+  <div class="photo-grid-item">
+    <img src="images/IMG_3729.JPG" class="city-photo" />
+  </div>
+  <div class="photo-grid-item">
+    <img src="images/IMG_3730.JPG" class="city-photo" />
+  </div>
+  <div class="photo-grid-item">
+    <img src="images/IMG_3731.JPG" class="city-photo" />
+  </div>
+  <div class="photo-grid-item">
+    <img src="images/IMG_3732.JPG" class="city-photo" />
+  </div>
+  <div class="photo-grid-item">
+    <img src="images/IMG_3733.JPG" class="city-photo" />
+  </div>
+</div>
+  <div class="city-content">
+    <div class="expenses-section">
+      <div class="expenses-header">
+        <h2 class="expenses-title">Expenses</h2>
+        <span class="expenses-total-city"></span>
+      </div>
+      <div class="expenses-list"></div>
+    </div>
+    <div class="tips-card">
+      <h2>Tips & Notes</h2>
+      <ul class="tips-list"></ul>
+    </div>
+  </div>
+  <div class="city-nav-footer">
+    <button class="city-nav-btn city-nav-prev"><span class="city-nav-direction">Previous</span><span class="city-nav-name"></span></button>
+    <button class="city-nav-btn right city-nav-next"><span class="city-nav-direction">Next stop</span><span class="city-nav-name"></span></button>
+  </div>
+</div>
+
+<!-- PHUKET -->
+<div id="page-phuket" class="page page-hidden">
+  <div class="city-hero">
+    <div class="city-hero-bg" style="background:#4A7B8A;">
+     <img src="images/IMG_3725.JPG" class="city-photo" />
+    </div>
+    <div class="city-hero-overlay"></div>
+    <div class="city-hero-content">
+      <div class="city-hero-flag"></div>
+      <h1 class="city-hero-name"></h1>
+      <p class="city-hero-dates"></p>
+    </div>
+    <div class="city-hero-total">
+      <p class="city-hero-total-label">Est. budget · 2 people</p>
+      <p class="city-hero-total-amount"></p>
+    </div>
+  </div>
+  <div class="photo-grid">
+  <div class="photo-grid-item">
+    <img src="images/IMG_3734.JPG" class="city-photo" />
+  </div>
+  <div class="photo-grid-item">
+    <img src="images/IMG_3735.JPG" class="city-photo" />
+  </div>
+  <div class="photo-grid-item">
+    <img src="images/IMG_3736.JPG" class="city-photo" />
+  </div>
+  <div class="photo-grid-item">
+    <img src="images/IMG_3737.JPG" class="city-photo" />
+  </div>
+  <div class="photo-grid-item">
+    <img src="images/IMG_3738.JPG" class="city-photo" />
+  </div>
+</div>
+  <div class="city-content">
+    <div class="expenses-section">
+      <div class="expenses-header">
+        <h2 class="expenses-title">Expenses</h2>
+        <span class="expenses-total-city"></span>
+      </div>
+      <div class="expenses-list"></div>
+    </div>
+    <div class="tips-card">
+      <h2>Tips & Notes</h2>
+      <ul class="tips-list"></ul>
+    </div>
+  </div>
+  <div class="city-nav-footer">
+    <button class="city-nav-btn city-nav-prev"><span class="city-nav-direction">Previous</span><span class="city-nav-name"></span></button>
+    <button class="city-nav-btn right city-nav-next" style="display:none;"><span class="city-nav-direction">Next stop</span><span class="city-nav-name"></span></button>
+  </div>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
